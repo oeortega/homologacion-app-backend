@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Homologación</title>
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 10pt;
+      margin: 50px;
+      line-height: 1.6;
+    }
+    .header {
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+    .tabla {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 9pt;
+    }
+    .tabla th, .tabla td {
+      border: 1px solid black;
+      padding: 5px;
+      text-align: left;
+    }
+    .firma {
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header" style="overflow: hidden;">
+    <img src="{{logo_base64}}" alt="Logo Universidad" style="width: 340px; float: left; margin-right: 20px;">
+    
+  </div>
+
+  <p>Valledupar, {{fecha}}</p>
+
+  <p>Ingeniero<br>
+  <strong>ARMANDO LUIS COTES DE ARMAS</strong><br>
+  Presidente Consejo de Facultad Ingeniería y Tecnológicas<br>
+  <strong>UNIVERSIDAD POPULAR DEL CESAR</strong></p>
+
+  <p>Asunto:<strong>Estudio de Transferencia Interna: {{nombre_estudiante}}</strong></p>
+
+  <p>Cordial saludo:</p>
+
+  <p>Por medio del presente envío estudio de homologación de asignaturas, presentada por el estudiante <strong>{{nombre_estudiante}}</strong> identificado con C.C. <strong>{{cedula}}</strong> aspirante al programa de Ingeniería de Sistemas.</p>
+
+  <p>A continuación, envío el estudio de Homologación de asignaturas realizado al aspirante teniendo en cuenta el Acuerdo 019 del 16 de diciembre del 2005 por el cual se reglamenta las transferencias internas y externas de la Universidad Popular del Cesar.</p>
+
+  <p>Al aspirante se le puede realizar la Homologación de Asignaturas porque cumple con el Artículo Noveno y Décimo del acuerdo 019 del 16 de diciembre del 2005.</p>
+
+  <p><strong>Descripción del Plan de Estudio a Homologar Programa de Ing. de Sistemas: V-0402-IS-D-06:</strong></p>
+  <p><strong>Relación de Asignaturas Homologadas:</strong></p>
+
+  <table class="tabla">
+    <thead>
+      <tr>
+        <th>ASIGNATURA</th>
+        <th>ASIGNATURA HOMOLOGADA</th>
+        <th>CÓDIGO</th>
+        <th>NOTA</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{filas}}
+    </tbody>
+  </table>
+
+  <div class="firma">
+    <p>Atentamente,</p>
+    <br><br>
+    <p><strong>ALVARO OÑATE BOWEN</strong><br>Director Departamento de Ingeniería de Sistemas</p>
+    <p style="color: #15B65E;">www.unicesar.edu.co<br>
+    Teléfono conmutador PBX: (+57 605 588 5592)<br>
+    Balneario Hurtado, Vía a Patillal<br>
+    Valledupar – Cesar, Colombia</p>
+  </div>
+</body>
+</html>

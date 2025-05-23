@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "oracledb": "^6.8.0",
+    "pdfkit": "^0.17.1",
+    "puppeteer": "^24.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
