@@ -61,7 +61,13 @@ function descargarPDF(req, res) {
   generarPDFDesdeHTML(ultimaHomologacion, res);
 }
 
+async function getOldPensum(req, res) {
+  const pensum = await oracleService.getOldPensum(); 
+  res.json(pensum);
+}
+
 module.exports = {
   calcularHomologacion,
-  descargarPDF
+  descargarPDF,
+  getOldPensum
 };

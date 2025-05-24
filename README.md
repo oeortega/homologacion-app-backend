@@ -115,6 +115,30 @@ La app estará disponible en [http://localhost:3000](http://localhost:3000)
 
 ---
 
+### GET `/homologacion/pensum/viejo`
+**Respuesta:**
+```json
+{
+  [
+    {
+      "codigo":"MT301B",
+      "nombre": "ALGEBRA LINELA"  
+    },
+    {
+      "codigo":"UPC08",
+      "nombre": "ACTIVIDAD DEPORTIVA"  
+    },
+    {
+      "codigo":"SS105",
+      "nombre": "INTRODUCCION A LA INGENIERIA DE SISTEMAS"  
+    },
+    ...
+  ]
+  
+}
+```
+---
+
 ##  Autor
 
 - Julio Morales – _Backend Developer_
