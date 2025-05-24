@@ -28,7 +28,10 @@ async function generarPDFDesdeHTML(datos, res) {
     .replace(/{{filas}}/g, filas)
     .replace(/{{logo_base64}}/g, logoDataURI);
 
-  const browser = await puppeteer.launch({ headless: true });
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
   const page = await browser.newPage();
   await page.setContent(htmlFinal, { waitUntil: 'networkidle0' });
 

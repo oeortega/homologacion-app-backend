@@ -1,0 +1,17 @@
+
+services:
+  app:
+    build: .
+    container_name: homologacion_app
+    ports:
+      - "3000:3000"
+    environment:
+      - DB_USER=system #debes llenar con el usuario de la base de datos
+      - DB_PASSWORD=root #debes llenar con la contraseña de la base de datos
+      - DB_CONNECT_STRING=oracle-local:1521/free #debes llenar con la cadena de conexión de la base de datos
+    networks:
+      - red_homologacion
+
+networks:
+  red_homologacion:
+    driver: bridge
