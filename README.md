@@ -44,7 +44,7 @@ Crea un archivo `.env` con los siguientes datos:
 ```env
 DB_USER=system
 DB_PASSWORD=Oracle123
-DB_CONNECT_STRING=oracle-db:1521/XEPDB1
+DB_CONNECT_STRING=oracle-db:1521/XEPDB1 # es un ejemplo de los datos que esperan las variables y debes reemplarlos por los tuyos
 ```
 
 > ⚠️ Asegúrate de que la base de datos Oracle esté accesible desde la red.
