@@ -12,7 +12,9 @@
     "express": "^5.1.0",
     "oracledb": "^6.8.0",
     "pdfkit": "^0.17.1",
-    "puppeteer": "^24.9.0"
+    "puppeteer": "^24.9.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
     "jest": "^29.7.0",
