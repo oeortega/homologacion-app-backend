@@ -73,5 +73,6 @@ router.post('/homologacion/calcular', homologacionController.calcularHomologacio
  *         description: No hay datos disponibles para generar el PDF
  */
 router.get('/homologacion/reporte/pdf', homologacionController.descargarPDF);
+router.get('/homologacion/pensum/viejo',homologacionController.getOldPensum);
 
 module.exports = router;

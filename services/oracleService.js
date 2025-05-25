@@ -46,9 +46,20 @@ async function obtenerTotalCreditosPensumNuevo() {
   }
 }
 
+async function getOldPensum() {
+  const connection = await getConnection();
+  try {
+    const result = await connection.execute(`SELECT CODIGO, ASIGNATURA FROM PENSUM_VIEJO`);
+    return result.rows.map(row => ({ codigo: row[0], nombre: row[1] }));
+  } finally {
+    await connection.close();
+  }
+}
+
 module.exports = {
   buscarHomologacion,
   obtenerCreditosPorCodigo,
   obtenerPensumNuevo,
-  obtenerTotalCreditosPensumNuevo
+  obtenerTotalCreditosPensumNuevo,
+  getOldPensum
 };
